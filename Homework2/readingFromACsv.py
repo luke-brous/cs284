@@ -4,10 +4,10 @@ import csv
 # Automatically closes the csv file 
 with open("presidents.csv", "r", newline='') as csvfile:
     # create variable to write in the csv file
-    c = csv.writer(csvfile)
+    c = csv.reader(csvfile)
     
     # iterate through the values in the data list 
     for row in c:
-        print(row)
+        print(row [1], ',', row[5])
 
 
